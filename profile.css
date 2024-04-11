@@ -1,0 +1,143 @@
+.wrapper{
+    width:70%;
+    margin:130px auto;
+    height:100%;
+}
+
+
+#columns2{
+    display: flex;
+    flex-direction: row;
+}
+
+#c1,#c2{
+    justify-content: center;
+    padding:10px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+#c2{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+a:hover>.box>.text>h2{
+  text-decoration: none !important;
+}
+a:hover{
+  text-decoration: none !important;
+}
+
+.iconBG{
+    height: 150px;
+    width: 150px;
+    top:inherit;
+    background-color: #EAD7D7;
+    border-radius: 50%;
+    margin:20px 20px;
+    display: block;
+}
+
+.iconBG .icons{
+    position:relative;
+    top: +35px;
+    left: +35px;
+    height: 80px;
+}
+
+.box{
+    margin:50px 80px 0px 0px;
+    width:100%;
+    border: 2px solid #D5B4B4;
+    border-radius: 120px;
+    display:flex;
+    flex-direction: row;
+}
+
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:20px 0 0 0 px
+}
+
+.subtext{
+    font-size:16px;
+}
+
+hr{
+    height:1px;
+    width:100%;
+}
+#bottomRibbon{
+    bottom:0px;
+    height:100px;
+    position: relative;
+    width:100%;
+    background-color: rgb(229,200,195);
+    text-align: center;
+}
+
+.bottomText{
+    font-size: 15px;
+    font-weight: lighter;
+    margin:11px 0px;
+    padding-top: 0px;
+    position: relative;
+    color:rgb(249, 238, 249);
+    display:inline-flex;
+    justify-content: center;   
+}
+
+.bottomText::after,.bottomText::before{
+    content:'|';
+}
+
+@keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+@keyframes staUp {
+    0% {
+      opacity: 1;
+    } 
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes opacityOn {
+    0% {
+      opacity: 0;
+
+    } 
+    100% {
+      opacity: 1;
+    }
+  }
+
+.slideUp,.box,#Heading {
+    animation-name: slideUp;
+    animation-duration: 0.7s;
+    visibility: visible;
+}
+
+.visibleOn{
+    animation-name: opacityOn;
+    animation-duration: 0.7s;
+    visibility: visible;
+}
+
+.stayUp {
+    animation-name: staUp;
+    animation-duration: 0.7s;
+    visibility: visible;
+}

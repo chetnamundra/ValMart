@@ -1,0 +1,159 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #E4D0D0,#867070);
+  height: 100vh;
+  overflow: hidden;
+}
+.center{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:900px ;
+    background : #f7f7f7;
+    border-radius: 20px;
+    border: 1px solid #867070;
+}
+
+.center h1{
+    text-align: center;
+    color:#151515;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #867070;
+}
+
+.center .table th,td{
+    padding-left: 20px;
+    padding-right: 20px;
+    flex: auto;
+    
+}
+
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .type1{
+    position: relative;
+    border-bottom: 2px solid #D5B4B4;
+    margin: 30px 0;
+}
+
+.type1:focus-within{
+    border-color:#867070 ;
+}
+
+.type1 input{
+    width: 100%;
+    padding: 0 1em;
+    height: 5vh;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.type1 label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #D5B4B4;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.type1 span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #867070;
+    transition: .5s;
+}
+.type1 input:focus ~ label,
+.type1 input:valid ~ label{
+    top: -5px;
+    color: #867070;
+}
+
+.type1 input:focus ~ span::before,
+.type1 input:valid ~ span::before{
+    width: 100%;
+}
+
+.pass{
+    margin: -5px 0 20px 5px;
+    color: #151515;
+    cursor: pointer;
+}
+
+.pass:hover{
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+    margin-top: 2em;
+    position :absolute;
+    width: 30%;
+    height: 50px;
+    border: 1px solid;
+    background:#867070;
+    border-radius: 25px;
+    font-size: 18px;
+    color:#f7f7f7;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+
+    left: 35%
+
+
+}
+
+input[type="submit"]:hover{
+    border-color:#867070;
+    color:#867070;
+    transition: .5s;
+    background:#f7f7f7;
+}
+
+tr:nth-child(2) td{
+    text-align: center;
+    text-decoration: none;
+    color: #D5B4B4;
+}
+ a{
+    text-decoration: none;
+    color: #867070;
+}
+
+@media screen and (max-width:1000px){
+    .center{
+        width: 80vw;
+    }
+    .type1 input{
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    .type1 input:focus ~ span::before,
+    .type1 input:valid ~ span::before{
+        width: 100%;
+        top:5vh;
+    }
+    
+}
+

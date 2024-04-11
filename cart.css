@@ -1,0 +1,65 @@
+html,body{
+    background-image: linear-gradient(120deg, #f7f7f7 10%, #f5ebeb 10%, #e4d0d0 60%, #f5ebeb 10%,#f7f7f7 10%);
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+tr{
+    background-color: #f7f7f7;
+}
+
+table{
+    border-radius:20px;
+}
+
+.submit-btn{
+    background-color: #867070;
+    color:#f7f7f7;
+}
+
+h1{
+    padding:30px;
+    margin:10px;
+}
+
+th{
+    font-weight: normal;
+    background-color: #867070;
+}
+thead tr{
+    background-color: #867070;
+    color: #f7f7f7;
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    }
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    }
+
+.close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    }

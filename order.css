@@ -1,0 +1,98 @@
+html,body{
+    background-image: linear-gradient(120deg, #f7f7f7 10%, #e4d0d0 10%, #867070 60%, #e4d0d0 10%,#f7f7f7 10%);
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper{
+    width:70%;
+    margin:130px auto;
+    height:100%;
+}
+
+.Orders{
+    display: flex;
+    line-height: 50%;
+    vertical-align: middle;
+    flex-direction: column;
+}
+.order div{
+    vertical-align: middle;
+    line-height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.list-group-item{
+    margin-bottom: 20px;
+}
+
+.final,.order{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    align-content: center;
+    place-content: end space-between;
+}
+
+.final div,.order div{
+    padding:2em 1em;
+    border-right:solid 0.6px rgba(170,170,170);
+    margin:0px;
+    width:100%;
+    text-align: center;
+}
+
+.final div:nth-last-child(1),.order div:nth-last-child(1),.order:nth-child(1)>div{
+    
+    border-right:none;
+}
+
+
+
+
+
+
+tr{
+    background-color: #f7f7f7;
+}
+
+table{
+    border-radius:20px;
+}
+
+.submit-btn{
+    background-color: #867070;
+    color:#f7f7f7;
+}
+
+h1{
+    padding:30px;
+    margin:10px;
+}
+
+th{
+    font-weight: normal;
+    background-color: #867070;
+}
+thead tr{
+    background-color: #867070;
+    color: #f7f7f7;
+
+}
+
+.final div:nth-child(1){
+    width:200%;
+    font-weight: bolder;
+}
+
+.headings{
+    font-weight: 900;
+    padding:0px;
+    border-right: none;
+    text-align: center;
+}
+
